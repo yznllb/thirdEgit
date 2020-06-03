@@ -4,7 +4,7 @@ import java.util.Map;
 
 import nuc.lb.location.entity.User;
 import nuc.lb.location.entity.object;
-//team add
+//team add 222
 public interface IObjectsDao {
 	public boolean addObject(object o);
 	public Map<String,object> getObjects();
