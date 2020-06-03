@@ -23,11 +23,11 @@ public class ObjectsDaoImpl implements IObjectsDao {
 	private final String uname = "root";
 	private final String upwd = "libin666";
 
-	// ¸ù¾İÊ§ÎïÏòÊı¾İ¿â,fileÖĞÌí¼ÓÎïÆ·
+	// æ ¹æ®å¤±ç‰©å‘æ•°æ®åº“,fileä¸­æ·»åŠ ç‰©å“
 	@Override
 	public boolean addObject(object o) {
-
-		// Ğ´ÈëÎÄ¼ş
+                  int a =2;
+		// å†™å…¥æ–‡ä»¶
 		File f = new File(DataBaseConfig.USER_FILE_PATH);
 		FileWriter fw = null;
 		BufferedWriter bw = null;
@@ -97,7 +97,7 @@ public class ObjectsDaoImpl implements IObjectsDao {
 
 	}
 
-	// »ñµÃËùÓĞµÄÊ§Îï
+	// è·å¾—æ‰€æœ‰çš„å¤±ç‰©
 	@Override
 	public Map<String, object> getObjects() {
 		Connection connection = null;
@@ -144,7 +144,7 @@ public class ObjectsDaoImpl implements IObjectsDao {
 		return maps;
 	}
 
-	// ¸ù¾İÎïÆ·µÄuidÀ´²éÑ¯·µ»ØÎïÆ·
+	// æ ¹æ®ç‰©å“çš„uidæ¥æŸ¥è¯¢è¿”å›ç‰©å“
 	@Override
 	public object query(int id) {
 		Connection connection = null;
@@ -193,7 +193,7 @@ public class ObjectsDaoImpl implements IObjectsDao {
 		return null;
 	}
 
-	// ·µ»ØbooleanÀ´ÅĞ¶ÏÊÇ·ñÉ¾³ı³É¹¦
+	// è¿”å›booleanæ¥åˆ¤æ–­æ˜¯å¦åˆ é™¤æˆåŠŸ
 	@Override
 	public boolean delete(int id) {
 		Connection connection = null;
