@@ -26,7 +26,7 @@ public class ObjectsDaoImpl implements IObjectsDao {
 	// 根据失物向数据库,file中添加物品
 	@Override
 	public boolean addObject(object o) {
-                  int a =2;
+                  int a =211;
 		// 写入文件
 		File f = new File(DataBaseConfig.USER_FILE_PATH);
 		FileWriter fw = null;
