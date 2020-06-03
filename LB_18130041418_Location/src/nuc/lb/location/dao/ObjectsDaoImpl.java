@@ -26,13 +26,7 @@ public class ObjectsDaoImpl implements IObjectsDao {
 	// 鏍规嵁澶辩墿鍚戞暟鎹簱,file涓坊鍔犵墿鍝�
 	@Override
 	public boolean addObject(object o) {
-<<<<<<< HEAD
         int a =4;
-		// 写入文件
-=======
-           int a =211;
-		// 鍐欏叆鏂囦欢
->>>>>>> branch 'master' of https://github.com/yznllb/thirdEgit.git
 		File f = new File(DataBaseConfig.USER_FILE_PATH);
 		FileWriter fw = null;
 		BufferedWriter bw = null;
