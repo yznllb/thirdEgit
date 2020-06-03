@@ -23,11 +23,16 @@ public class ObjectsDaoImpl implements IObjectsDao {
 	private final String uname = "root";
 	private final String upwd = "libin666";
 
-	// ¸ù¾İÊ§ÎïÏòÊı¾İ¿â,fileÖĞÌí¼ÓÎïÆ·
+	// éè§„åµæ¾¶è¾©å¢¿éšæˆæšŸé¹î†¼ç°±,fileæ¶“î…ŸåŠé”çŠµå¢¿éï¿½
 	@Override
 	public boolean addObject(object o) {
+<<<<<<< HEAD
         int a =4;
-		// Ğ´ÈëÎÄ¼ş
+		// å†™å…¥æ–‡ä»¶
+=======
+           int a =211;
+		// éæ¬å†é‚å›¦æ¬¢
+>>>>>>> branch 'master' of https://github.com/yznllb/thirdEgit.git
 		File f = new File(DataBaseConfig.USER_FILE_PATH);
 		FileWriter fw = null;
 		BufferedWriter bw = null;
@@ -97,7 +102,7 @@ public class ObjectsDaoImpl implements IObjectsDao {
 
 	}
 
-	// »ñµÃËùÓĞµÄÊ§Îï
+	// é‘¾å³°ç·±éµï¿½éˆå¤Œæ®‘æ¾¶è¾©å¢¿
 	@Override
 	public Map<String, object> getObjects() {
 		Connection connection = null;
@@ -144,7 +149,7 @@ public class ObjectsDaoImpl implements IObjectsDao {
 		return maps;
 	}
 
-	// ¸ù¾İÎïÆ·µÄuidÀ´²éÑ¯·µ»ØÎïÆ·
+	// éè§„åµé—â•æ§é¨å‰ˆidé‰ãƒ¦ç…¡ç’‡ãˆ£ç¹‘é¥ç‚µå¢¿éï¿½
 	@Override
 	public object query(int id) {
 		Connection connection = null;
@@ -193,7 +198,7 @@ public class ObjectsDaoImpl implements IObjectsDao {
 		return null;
 	}
 
-	// ·µ»ØbooleanÀ´ÅĞ¶ÏÊÇ·ñÉ¾³ı³É¹¦
+	// æ©æ–¿æ´–booleané‰ãƒ¥å½é‚î…Ÿæ§¸éšï¹€å¹é—„ã‚†åšé”ï¿½
 	@Override
 	public boolean delete(int id) {
 		Connection connection = null;
