@@ -26,7 +26,7 @@ public class ObjectsDaoImpl implements IObjectsDao {
 	// 鏍规嵁澶辩墿鍚戞暟鎹簱,file涓坊鍔犵墿鍝�
 	@Override
 	public boolean addObject(object o) {
-           int a=4444;
+           int a=444;
 		// 鍐欏叆鏂囦欢
 		File f = new File(DataBaseConfig.USER_FILE_PATH);
 		FileWriter fw = null;
